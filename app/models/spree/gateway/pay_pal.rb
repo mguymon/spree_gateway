@@ -5,7 +5,7 @@ module Spree
     preference :signature, :string
     preference :currency_code, :string
     
-    attr_accessible :preferred_login, :preferred_password, :preferred_signature, :preferred_currency_code
+    attr_accessible :environment, :display_on, :active, :name, :description, :preferred_login, :preferred_password, :preferred_signature, :preferred_currency_code
 
     def provider_class
       ActiveMerchant::Billing::PaypalGateway
